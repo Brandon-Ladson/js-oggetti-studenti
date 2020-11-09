@@ -1,10 +1,13 @@
 // Dare la possibilità all’utente attraverso 3 prompt di
 // aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
+// propmt per far inserire all'utente il suo nome
 var nomeUtente = prompt("scrivi il tuo nome");
 
+// propmt per far inserire all'utente il suo cognome
 var cognomeUtente = prompt("scrivi il tuo cognome");
 
+// propmt per far inserire all'utente la sua età
 var etaUtente = parseInt(prompt("scrivi quanti anni hai"));
 
 // array con oggetti contenenti i dati degli studenti
@@ -46,5 +49,5 @@ var listaStudenti = [
 for (var key in listaStudenti) {
 
   console.log(listaStudenti[key].nome + " " + listaStudenti[key].cognome + " " + listaStudenti[key].eta);
-  
+
 }
