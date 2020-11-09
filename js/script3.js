@@ -10,6 +10,13 @@ var cognomeUtente = prompt("scrivi il tuo cognome");
 // propmt per far inserire all'utente la sua età
 var etaUtente = parseInt(prompt("scrivi quanti anni hai"));
 
+// oggetto contenente i dati dell'utente
+var oggettoUtente = {
+  "nome": nomeUtente,
+  "cognome": cognomeUtente,
+  "eta": etaUtente
+}
+
 // array con oggetti contenenti i dati degli studenti
 var listaStudenti = [
 
@@ -37,13 +44,10 @@ var listaStudenti = [
     "eta": 83
   },
 
-  {
-    "nome": nomeUtente,
-    "cognome": cognomeUtente,
-    "eta": etaUtente
-  },
-
 ];
+
+// aggiungo l'oggetto contenente i dati dell'utente nel array lista studenti
+listaStudenti.push(oggettoUtente);
 
 // ciclo for per ciclare la lista studenti e per stampare il loro nome e cognome
 for (var key in listaStudenti) {
