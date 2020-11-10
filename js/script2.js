@@ -4,34 +4,32 @@
 var listaStudenti = [
 
   {
-    "nome": "jerod",
-    "cognome": "shelby",
+    "nome": "Jerod",
+    "cognome": "Shelby",
     "eta": 52
   },
 
   {
-    "nome": "gordon",
-    "cognome": "murray",
+    "nome": "Gordon",
+    "cognome": "Murray",
     "eta": 74
   },
 
   {
-    "nome": "horacio",
-    "cognome": "pagani",
+    "nome": "Horacio",
+    "cognome": "Pagani",
     "eta": 64
   },
 
   {
-    "nome": "gianpaolo",
-    "cognome": "dallara",
+    "nome": "Gianpaolo",
+    "cognome": "Dallara",
     "eta": 83
   },
 
 ];
 
 // ciclo for per ciclare la lista studenti e per stampare il loro nome e cognome
-for (var key in listaStudenti) {
-
-  console.log(listaStudenti[key].nome + " " + listaStudenti[key].cognome);
-
+for (var i = 0; i < listaStudenti.length; i++) {
+  console.log(listaStudenti[i].nome + " " + listaStudenti[i].cognome);
 }

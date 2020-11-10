@@ -21,26 +21,26 @@ var oggettoUtente = {
 var listaStudenti = [
 
   {
-    "nome": "jerod",
-    "cognome": "shelby",
+    "nome": "Jerod",
+    "cognome": "Shelby",
     "eta": 52
   },
 
   {
-    "nome": "gordon",
-    "cognome": "murray",
+    "nome": "Gordon",
+    "cognome": "Murray",
     "eta": 74
   },
 
   {
-    "nome": "horacio",
-    "cognome": "pagani",
+    "nome": "Horacio",
+    "cognome": "Pagani",
     "eta": 64
   },
 
   {
-    "nome": "gianpaolo",
-    "cognome": "dallara",
+    "nome": "Gianpaolo",
+    "cognome": "Dallara",
     "eta": 83
   },
 
@@ -49,9 +49,16 @@ var listaStudenti = [
 // aggiungo l'oggetto contenente i dati dell'utente nel array lista studenti
 listaStudenti.push(oggettoUtente);
 
+// PER FARE PUSH DELL'OGGETTO SENZA CREARE VARIABILE oggettoUtente
+// listaStudenti.push(
+//   {
+//     "nome": nomeUtente,
+//     "cognome": cognomeUtente,
+//     "eta": etaUtente
+//   }
+//);
+
 // ciclo for per ciclare la lista studenti e per stampare il loro nome e cognome
-for (var key in listaStudenti) {
-
-  console.log(listaStudenti[key].nome + " " + listaStudenti[key].cognome + " " + listaStudenti[key].eta);
-
+for (var i = 0; i < listaStudenti.length; i++) {
+  console.log(listaStudenti[i].nome + " " + listaStudenti[i].cognome + " " + listaStudenti[i].eta);
 }
